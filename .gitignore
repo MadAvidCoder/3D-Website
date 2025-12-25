@@ -1,0 +1,10 @@
+.idea/
+build/release
+logs
+*.log
+node_modules
+.npm
+.env
+.env.*
+!.env.example
+dist
