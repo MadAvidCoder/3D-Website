@@ -10,7 +10,6 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setSize( window.innerWidth, window.innerHeight );
 renderer.setAnimationLoop( animate );
 renderer.render(scene, camera);
-document.body.appendChild( renderer.domElement );
 
 const geometry = new THREE.BoxGeometry( 1, 1, 1 );
 const texture = new THREE.TextureLoader().load('cat.jpg')
