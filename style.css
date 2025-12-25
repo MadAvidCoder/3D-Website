@@ -40,3 +40,11 @@ section {
 .left {
     grid-column: 6 / 12;
 }
+
+i {
+    font-style: italic;
+}
+
+b {
+    font-weight: bold;
+}
