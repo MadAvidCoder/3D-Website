@@ -26,8 +26,8 @@ scene.add(donut);
 camera.position.z = 18;
 
 function animate() {
-    donut.rotation.x += 0.01;
-    donut.rotation.y += 0.01;
+    donut.rotation.x += 0.0003;
+    donut.rotation.y += 0.0003;
 
     renderer.render( scene, camera );
 
@@ -65,5 +65,3 @@ function moveCamera() {
 
 document.body.onscroll = moveCamera;
 moveCamera();
-
-animate();
