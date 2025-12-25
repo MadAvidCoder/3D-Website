@@ -12,13 +12,13 @@ renderer.setAnimationLoop( animate );
 renderer.render(scene, camera);
 
 const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-const texture = new THREE.TextureLoader().load('cat.jpg')
+const texture = new THREE.TextureLoader().load('images/cat.jpg')
 const material = new THREE.MeshBasicMaterial( { map: texture } );
 const cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
 const donut_geo = new THREE.TorusGeometry(10, 3, 16, 100);
-const donut_texture = new THREE.TextureLoader().load('donut.webp')
+const donut_texture = new THREE.TextureLoader().load('images/donut.webp')
 const donut_tex = new THREE.MeshBasicMaterial({ map: donut_texture });
 const donut = new THREE.Mesh(donut_geo, donut_tex);
 scene.add(donut);
