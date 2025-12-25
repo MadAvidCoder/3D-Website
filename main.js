@@ -30,4 +30,19 @@ function animate() {
     requestAnimationFrame(animate);
 }
 
+function add_star() {
+    const star_geometry = new THREE.SphereGeometry(0.25, 24, 24);
+    const star_material = new THREE.MeshBasicMaterial({ color: 0xffffff  });
+    const star = new THREE.Mesh(star_geometry, star_material);
+
+    const [x, y, z] = Array(3)
+        .fill()
+        .map(() => THREE.MathUtils.randFloatSpread(200));
+
+    star.position.set(x, y, z);
+    scene.add(star);
+}
+
+Array(200).fill().forEach(add_star);
+
 animate();
